@@ -131,3 +131,11 @@ function drawFractal() {
 }
 
 drawFractal();
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('active'); // shows/hides menu
+  burger.classList.toggle('toggle');   // optional: animate lines
+});
+
