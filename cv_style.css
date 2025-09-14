@@ -84,11 +84,4 @@
 }
 
 
-@media screen and (max-width:768px){
-  .burger{display:flex;}
-  .nav-links{display:none; position:absolute; top:60px; left:0; width:100%; flex-direction:column; background:#6a4fb2; border-radius:0 0 10px 10px; z-index:100; transition: all 0.3s ease;}
-  .nav-links.active{display:flex;}
-  .nav-links li a{padding:1rem; text-align:center; color:white; width:100%;}
-}
-
 
