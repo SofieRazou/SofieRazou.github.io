@@ -131,11 +131,24 @@ function drawFractal() {
 }
 
 drawFractal();
+// Hamburger Menu Toggle
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 
 burger.addEventListener('click', () => {
-  navLinks.classList.toggle('active'); // shows/hides menu
-  burger.classList.toggle('toggle');   // optional: animate lines
+  navLinks.classList.toggle('active'); // show/hide menu
+  burger.classList.toggle('toggle');   // animate lines
+});
+
+// Close menu when clicking a link on mobile
+const links = document.querySelectorAll('.nav-links li a');
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    if(navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+      burger.classList.remove('toggle');
+    }
+  });
 });
 
