@@ -3,232 +3,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sofia Razou | Portfolio</title>
-  <link rel="stylesheet" href="cv_style.css">
-  <script src="cv_script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Sofia Razou — Electrical and Computer Engineering student at NTUA.">
+  <title>Sofia Razou | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
- <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">Sofia Razou</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#honours">Honours</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#conferences">Conferences</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#languages">Languages</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="burger">
-      <div></div>
-      <div></div>
-      <div></div>
+  <header class="navbar">
+    <a class="logo robot-logo" href="index.html" aria-label="Sofia Razou — Home">
+      <svg class="robot-mascot" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="bodyMetal" cx="30%" cy="25%" r="75%">
+            <stop offset="0%" stop-color="#47758D"/>
+            <stop offset="55%" stop-color="#17445B"/>
+            <stop offset="100%" stop-color="#071D30"/>
+          </radialGradient>
+          <radialGradient id="headMetal" cx="30%" cy="20%" r="80%">
+            <stop offset="0%" stop-color="#7184C4"/>
+            <stop offset="55%" stop-color="#293C75"/>
+            <stop offset="100%" stop-color="#101C43"/>
+          </radialGradient>
+          <radialGradient id="eyeMetal" cx="30%" cy="25%">
+            <stop offset="0%" stop-color="#5576C4"/>
+            <stop offset="100%" stop-color="#07152F"/>
+          </radialGradient>
+        </defs>
+        <circle cx="38" cy="49" r="21" fill="url(#bodyMetal)"/>
+        <ellipse cx="29" cy="38" rx="8" ry="4" fill="#9CC9E4" opacity=".15" transform="rotate(-35 29 38)"/>
+        <path d="M22 29 A16 16 0 0 1 54 29 Z" fill="url(#headMetal)"/>
+        <ellipse cx="32" cy="22" rx="7" ry="3" fill="#D0DCFF" opacity=".12" transform="rotate(-30 32 22)"/>
+        <circle cx="31" cy="24" r="3.1" fill="url(#eyeMetal)"/>
+        <circle cx="44" cy="24" r="3.1" fill="url(#eyeMetal)"/>
+      </svg>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" aria-current="page" class="active">Home</a>
+      <a href="experience.html" >Experience</a>
+      <a href="projects.html" >Projects</a>
+    </nav>
+    <div class="contents-wrapper">
+      <button class="contents-btn" id="contentsBtn" aria-expanded="false" aria-controls="contentsMenu">
+        <span class="gear-icon">⚙</span> CONTENTS
+      </button>
+      <nav class="contents-menu" id="contentsMenu" hidden aria-label="Page contents">
+        <a href="#about">About Me</a>
+        <a href="#honours">Honours & Awards</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#languages">Languages</a>
+      </nav>
     </div>
-  </nav>
-
-  <!-- Home -->
-  <header id="home">
-  <canvas id="fractalCanvas"></canvas>
-  <div class="home-content">
-    <h1>Hello, I'm Sofia</h1>
-    <p>Bachelor of Electrical and Computer Engineering @ NTUA | Senior Member, RAS – Bosch Future Mobility Challenge</p>
-    <a href="#projects" class="btn">Explore My Work</a>
-  </div>
   </header>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am an Electrical and Computer Engineering student at NTUA with a strong passion for robotics, automation, and data-driven projects. 
-      I have hands-on experience in programming, embedded systems, and autonomous systems competitions. 
-      My goal is to contribute to research and industry in AI, robotics, and particle physics.
-    </p>
-  </section>
+  <aside class="scroll-stars" id="scrollStars" aria-hidden="true">
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+  </aside>
+  <main>
 
-  <!-- Education -->
-<section id="education" class="section">
-  <h2>Education & Training</h2>
-  <div class="timeline-vertical">
-    <div class="timeline-item">
-      <div class="timeline-date">2024 - Present</div>
-      <div class="timeline-content">
-        <h4>NTUA, Athens, Greece</h4>
-        <p>Bachelor in Electrical and Computer Engineering</p>
+    <!-- HERO -->
+    <section class="hero section dark-section" id="home">
+      <div class="hero-video-container">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+          <source src="roller.mp4" type="video/mp4">
+        </video>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-date">2021 - 2024</div>
-      <div class="timeline-content">
-        <h4>Model High School of Agioi Anargiroi, Athens</h4>
-        <p>High School Diploma with a strong STEM focus</p>
+      <div class="section-container hero-content">
+        <p class="eyebrow">ELECTRICAL &amp; COMPUTER ENGINEERING</p>
+        <h1>Sofia <span>Razou</span></h1>
+        <h2>Undergraduate student at the National Technical University of Athens</h2>
+        <p class="hero-description">Interested in control systems, robotics, human-computer interaction and formal methods</p>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Honours -->
-<section id="honours" class="section">
-  <h2>Honours & Awards</h2>
-  <div class="timeline-vertical">
-
-    <div class="timeline-item">
-      <div class="timeline-date">2025</div>
-      <div class="timeline-content">
-        <h4>Semifinalist - Bosch Future Mobility Challenge</h4>
-        <p>Contributed to the design and implementation of autonomous driving in a 1:10 scale vehicle, focusing on sensor fusion and software architecture.</p>
-        
-        <div class="media-container">
-          <img src="mutlimedia/get.jpeg" alt="Bosch Future Mobility Challenge Team" width="600" height="400">
-          <video width="600" height="400" controls>
-            <source src="mutlimedia/bfmc_video.mp4" type="video/mp4" width = "700" height = "369">
-          </video>
+    <!-- ABOUT -->
+    <section class="section light-section" id="about">
+      <div class="section-container">
+        <p class="section-kicker">PROFILE</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="prose">
+            <p>I am an undergraduate student of Electrical and Computer Engineering at the <strong>National Technical University of Athens</strong>, pursuing my Diploma degree from September 2024 to an expected completion in June 2029.</p>
+            <p>My technical interests span control and embedded systems, scientific computing, machine learning, computer vision, FPGA development and quantum computing.</p>
+            <p>I enjoy combining software and hardware in practical engineering work — from sensor-based assistive navigation to motor control and quantum-algorithm emulation on FPGA platforms.</p>
+          </div>
+          <aside class="focus-panel">
+            <span class="panel-star">✧</span>
+            <h3>Areas of Focus</h3>
+            <ul>
+              <li>Control Systems</li>
+              <li>Robotics: Haptics, Healthcare &amp; Autonomous vehicles</li>
+              <li>Scientific Computing</li>
+              <li>Quantum Computing</li>
+            </ul>
+          </aside>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="timeline-item">
-      <div class="timeline-date">2024</div>
-      <div class="timeline-content">
-        <h4>Panhellenic Exams</h4>
-        <p>Top percentile scores across STEM subjects - 19.460/20.000 Total Score - Entered at 13th place in ECE @NTUA</p>
+    <!-- HONOURS & AWARDS -->
+    <section class="section dark-section" id="honours">
+      <div class="section-container">
+        <p class="section-kicker">RECOGNITION</p>
+        <h2 class="section-title">Honours &amp; Awards</h2>
+        <div class="cards-grid">
+          <article class="info-card">
+            <p class="date-label">JULY 2024</p>
+            <h3>Panhellenic Exams</h3>
+            <p>Scored 19.460/20.000 and entered the School of Electrical and Computer Engineering at NTUA in 13th place.</p>
+          </article>
+          <article class="info-card">
+            <p class="date-label">MAY 2023</p>
+            <h3>European Olympiad of Experimental Science</h3>
+            <p>Placed 1st nationally in Greece and received a Bronze Medal at the European finals in Latvia.</p>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="timeline-item">
-      <div class="timeline-date">2023</div>
-      <div class="timeline-content">
-        <h4>Bronze Medal - EOES</h4>
-        <p>Distinguished in the European Olympiad of Experimental Sciences, achieving a Bronze medal at the European level held in Latvia.</p>
-        <img src="mutlimedia/eoes.png" alt="EOES 2023" width="600" height="450">
+    <!-- EDUCATION -->
+    <section class="section light-section" id="education">
+      <div class="section-container">
+        <p class="section-kicker">ACADEMIC BACKGROUND</p>
+        <h2 class="section-title">Education</h2>
+        <div class="timeline compact-timeline">
+          <article class="timeline-item">
+            <span class="timeline-star">✦</span>
+            <div class="timeline-card">
+              <p class="date-label">SEPTEMBER 2024 – EXPECTED JUNE 2029</p>
+              <h3>Diploma in Electrical and Computer Engineering</h3>
+              <h4>National Technical University of Athens</h4>
+              <p class="location">Athens, Greece</p>
+              <a class="text-link" href="https://www.ece.ntua.gr/en/undergraduate/info" target="_blank" rel="noopener noreferrer">Undergraduate programme ↗</a>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="timeline-item">
-      <div class="timeline-date">2019</div>
-      <div class="timeline-content">
-        <h4>Math Competition Thales</h4>
-      </div>
-    </div>
+    <!-- SKILLS -->
+<!-- SKILLS -->
+<section class="section dark-section" id="skills">
+    <div class="section-container">
+        <p class="section-kicker">TECHNICAL TOOLKIT</p>
+        <h2 class="section-title">Skills</h2>
 
-  </div>
+        <div class="skills-grid">
+
+            <article class="skill-group">
+                <h3>Programming</h3>
+                <div class="tags">
+                    C++, &nbsp; C, &nbsp; Python, &nbsp; MATLAB, &nbsp;
+                    Verilog, &nbsp; SystemVerilog, &nbsp; MIPS Assembly, &nbsp; Lean
+                </div>
+            </article>
+
+            <article class="skill-group">
+                <h3>Scientific Computing &amp; ML</h3>
+                <div class="tags">
+                    PyTorch, &nbsp; Keras, &nbsp; OpenCV, &nbsp;
+                    Computer Vision, &nbsp; ROOT
+                </div>
+            </article>
+
+            <article class="skill-group">
+                <h3>Control &amp; Embedded Systems</h3>
+                <div class="tags">
+                    Control Systems, &nbsp; MATLAB/Simulink, &nbsp;
+                    dSPACE ControlDesk, &nbsp; FPGA Development, &nbsp;
+                    Arduino, &nbsp; ESP8266
+                </div>
+            </article>
+
+            <article class="skill-group">
+                <h3>Quantum Computing</h3>
+                <div class="tags">
+                    Quantum Emulation, &nbsp;
+                    Hybrid Quantum–Classical Optimization
+                </div>
+            </article>
+
+            <article class="skill-group">
+                <h3>Hardware &amp; Tools</h3>
+                <div class="tags">
+                    KiCad, &nbsp; Linux, &nbsp; Git, &nbsp; GitHub
+                </div>
+            </article>
+
+            <article class="skill-group">
+                <h3>Web &amp; Documentation</h3>
+                <div class="tags">
+                    HTML, &nbsp; CSS, &nbsp; JavaScript, &nbsp;
+                    MkDocs, &nbsp; LaTeX
+                </div>
+            </article>
+
+        </div>
+    </div>
 </section>
 
-
-<!-- Work Experience -->
-<section id="work" class="section">
-  <h2>Work Experience</h2>
-  <div class="timeline-vertical">
-    <div class="timeline-item">
-      <div class="timeline-date">2024 - Present</div>
-      <div class="timeline-content">
-        <h4> Intern at the Max Planck Institute for Intelligent Systems -- Haptic Intelligence department </h4>
-        <p>Upcomping intern at MPIS Stuttgart, specializing on making new haptic interfaces for the Continuous and Precise Torque Motor, a novelty of fidelity in a haptic motor, with advisor Dr. Katherine Kuchenbecker.</p>
-        <a href="https://is.mpg.de/publications/javot23-whcd-capt">Read Article</a>
-        <h4>RAS Senior Member | iRASional NTUA IEEE SB</h4>
-        <p>Collaborated on the Bosch Future Mobility Challenge 2025. Assisted in developing autonomous vehicle prototypes, programming lanes and object detection systems, and leading workshops for students.</p>
-        <a href="https://www.gazzetta.gr/gmotion/2452205/omada-irasional-toy-emp-mellon-einai-mprosta-toys">Read Article</a>
-        
+    <!-- LANGUAGES -->
+    <section class="section light-section" id="languages">
+      <div class="section-container">
+        <p class="section-kicker">COMMUNICATION</p>
+        <h2 class="section-title">Languages</h2>
+        <div class="timeline language-timeline">
+          <article class="timeline-item"><span class="timeline-star">✦</span><div class="timeline-card language-card"><h3>Greek</h3><p>Native</p></div></article>
+          <article class="timeline-item"><span class="timeline-star">✦</span><div class="timeline-card language-card"><h3>English</h3><p>C2 — Cambridge Proficiency in English</p></div></article>
+          <article class="timeline-item"><span class="timeline-star">✦</span><div class="timeline-card language-card"><h3>French</h3><p>B2 — Sorbonne Certificat Pratique de Langue Française</p></div></article>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-  <!-- Conferences & Certificates -->
-  <section id="conferences" class="section">
-    <h2>Conferences & Certifications</h2>
-    <ul class="conferences-gallery">
-      
-      <li><strong>ISSOM 2025, Hanover</strong> – International Summer School on Microelectronics, focused on chip-design, FPGA accelerated computing and their fusion with AI and the automative.</li>
-      <li><strong>Accelerating Deep Learning with GPUs | IBM Cognitive Class</strong></li>
-      <li><strong>Quantum Enigmas | IBM Skills Build</strong> – Quantum computing certification</li>
-      <li><strong>Signal Processing Onramp | MathWorks/MATLAB</strong></li>
-      <li><strong>Web Development Fundamentals | IBM Skills Build</strong> – HTML, CSS, JavaScript, and web deployment certification</li>
-      <li><strong>TensorFlow-Keras Bootcamp | OpenCV University</strong> – Neural network development</li>
-      <li><strong>CERN Particle Physics Masterclass 2024, Athens</strong> – Hands-on particle physics experiments and data analysis workshops</li>
-      <li><strong>NTUA_H4CK 2024</strong> – Seminar on cybersecurity and Linux-based systems organized by CS IEEE NTUA SB</li>
-      <li><strong>Researchers' Night 2024, NTUA</strong> – Public STEM demonstrations</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h4>SAT Fusion — Sensor Fusion with SAT Solvers</h4>
-      <p>A lightweight SAT-based decision engine** for embedded sensor fusion.
-
-The system integrates:
-- IMU for tumbling detection
-- ultrasonic sensing for obstacle detection
-- dual IR sensors for path following
-
-A servo-based haptic feedback system** communicates navigation decisions to the user.  
-Designed as a prototype assistive navigation system for visually impaired mobility.
-</p>
-    </div>
-    <div class="project">
-      <h4>Moon Position Detector</h4>
-      <p>Developed a real-time embedded system using a brushless DC motor and two servos to precisely position a telescope lens for lunar observation.</p>
-    </div>
-    <div class="project">
-      <h4>Antikythera Mechanism Simulation</h4>
-      <p>Implemented with Arduino to simulate the relative positions of celestial bodies in real-time using servo motors.</p>
-    </div>
-    <div class="project">
-      <h4>Heap Game Simulation</h4>
-      <p>Simulates a two-player game with a Greedy player and a Monte Carlo player. Utilizes probabilistic Monte Carlo algorithms for scalable simulations.</p>
-    </div>
-    <a href="https://github.com/SofieRazou" class="btn">View More Projects on GitHub</a>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div>Python and related frameworks and libraries (OpenCV,tensorflow, pandas, matplotlib, clothoids etc.)</div>
-      <div>C++</div>
-      <div>HTML, CSS, Javascript (Basic)</div>
-      <div>Simulink Modelling</div>
-      <div>Signal Processing (MATLAB and DSPs in Verilog)</div>
-      <div>Embedded Systems (Arduino, Nucleo STM32)</div>
-      <div>Robotic design in Simscape</div>
-      <div>Control systems modeling</div>
-      <div>Data Analysis (ROOT, Pythia)</div>
-       <div>Deep Learning</div>
-      <div>Neural Networks </div>
-      <div>Lean 4 -- Formal Verification (basics)</div>
-      <div>Quantum Information</div>
-      
-      
-    </div>
-  </section>
-
-  <!-- Languages -->
-  <section id="languages" class="section">
-    <h2>Languages</h2>
-    <ul>
-       <li>Greek – Native</li>
-      <li>English – Cambridge Proficiency C2</li>
-      <li>French – Sorbonne B2</li>
-     
-    </ul>
-  </section>
-
-  <!--Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: sofia.razoy {at} gmail {dot} com</p>
-    <p>LinkedIn: <a href = "https://www.linkedin.com/in/sofia-razou-997180332/">Sofia Razou LinkedIn</a> </p>
-  </section>
-
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Sofia Razou</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

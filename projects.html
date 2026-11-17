@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sofia Razou — Electrical and Computer Engineering student at NTUA.">
+  <title>Sofia Razou | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo robot-logo" href="index.html" aria-label="Sofia Razou — Home">
+      <svg class="robot-mascot" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="bodyMetal" cx="30%" cy="25%" r="75%">
+            <stop offset="0%" stop-color="#47758D"/>
+            <stop offset="55%" stop-color="#17445B"/>
+            <stop offset="100%" stop-color="#071D30"/>
+          </radialGradient>
+          <radialGradient id="headMetal" cx="30%" cy="20%" r="80%">
+            <stop offset="0%" stop-color="#7184C4"/>
+            <stop offset="55%" stop-color="#293C75"/>
+            <stop offset="100%" stop-color="#101C43"/>
+          </radialGradient>
+          <radialGradient id="eyeMetal" cx="30%" cy="25%">
+            <stop offset="0%" stop-color="#5576C4"/>
+            <stop offset="100%" stop-color="#07152F"/>
+          </radialGradient>
+        </defs>
+        <circle cx="38" cy="49" r="21" fill="url(#bodyMetal)"/>
+        <ellipse cx="29" cy="38" rx="8" ry="4" fill="#9CC9E4" opacity=".15" transform="rotate(-35 29 38)"/>
+        <path d="M22 29 A16 16 0 0 1 54 29 Z" fill="url(#headMetal)"/>
+        <ellipse cx="32" cy="22" rx="7" ry="3" fill="#D0DCFF" opacity=".12" transform="rotate(-30 32 22)"/>
+        <circle cx="31" cy="24" r="3.1" fill="url(#eyeMetal)"/>
+        <circle cx="44" cy="24" r="3.1" fill="url(#eyeMetal)"/>
+      </svg>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" >Home</a>
+      <a href="projects.html" aria-current="page" class="active">Projects</a>
+      <a href="experience.html" >Experience</a>
+    </nav>
+    <div class="contents-wrapper">
+      <button class="contents-btn" id="contentsBtn" aria-expanded="false" aria-controls="contentsMenu">
+        <span class="gear-icon">⚙</span> CONTENTS
+      </button>
+      <nav class="contents-menu" id="contentsMenu" hidden aria-label="Page contents">
+        <a href="#engineering-projects">Selected Projects</a>
+        <a href="#bfmc">Bosch Future Mobility Challenge</a>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="scroll-stars" id="scrollStars" aria-hidden="true">
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+  </aside>
+  <main>
+
+    <section class="section dark-section page-intro" id="projects">
+      <div class="section-container">
+        <p class="section-kicker">SELECTED WORK</p>
+        <h1 class="section-title">Projects</h1>
+        <p class="hero-description">A selection of engineering, research and team projects.</p>
+      </div>
+    </section>
+
+    <section class="section light-section" id="engineering-projects">
+      <div class="section-container">
+        <p class="section-kicker">ENGINEERING &amp; RESEARCH</p>
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="cards-grid">
+          <article class="project-card">
+            <p class="project-index">ASSISTIVE TECHNOLOGY</p>
+            <h3>SAT Fusion — Sensor Fusion with SAT Solvers</h3>
+            <p>Designed a lightweight SAT-based decision engine for assistive navigation for visually impaired mobility, integrating an IMU, ultrasonic sensors, dual IR sensors and servo haptic feedback.</p>
+          </article>
+          <article class="project-card">
+            <p class="project-index">QUANTUM COMPUTING &amp; AEROSPACE</p>
+            <h3>REXUS/BEXUS Quantum Emulation Proposal</h3>
+            <p>Collaborated with the CSLab and photonics-quantum computing laboratories of NTUA to prepare a team proposal on quantum algorithm emulation on FPGA platforms for a REXUS programme sounding rocket.</p>
+            <a class="text-link" href="https://zenodo.org/records/18100649" target="_blank" rel="noopener noreferrer">View proposal on Zenodo ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOSCH FUTURE MOBILITY CHALLENGE -->
+    <section class="section dark-section" id="bfmc">
+      <div class="section-container">
+        <p class="section-kicker">AUTONOMOUS MOBILITY</p>
+        <h2 class="section-title">Bosch Future Mobility Challenge</h2>
+        <div class="feature-card">
+          <div class="feature-copy">
+            <p class="date-label">JUNE 2025 · CLUJ-NAPOCA, ROMANIA</p>
+            <h3>International Semifinalist</h3>
+            <p class="feature-status">NTUA RAS Team</p>
+            <p>Participated as a member of the NTUA RAS team and reached the international semifinals. Contributed to autonomous driving for a 1:10-scale vehicle, with work focused on sensor fusion and software architecture.</p>
+            <a class="text-link" href="https://github.com/SofieRazou" target="_blank" rel="noopener noreferrer">Explore my GitHub ↗</a>
+          </div>
+          <div class="video-frame">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="bfmc_video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+            <p class="media-caption">Bosch Future Mobility Challenge — NTUA RAS Team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Sofia Razou</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sofia Razou — Electrical and Computer Engineering student at NTUA.">
+  <title>Sofia Razou | Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo robot-logo" href="index.html" aria-label="Sofia Razou — Home">
+      <svg class="robot-mascot" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="bodyMetal" cx="30%" cy="25%" r="75%">
+            <stop offset="0%" stop-color="#47758D"/>
+            <stop offset="55%" stop-color="#17445B"/>
+            <stop offset="100%" stop-color="#071D30"/>
+          </radialGradient>
+          <radialGradient id="headMetal" cx="30%" cy="20%" r="80%">
+            <stop offset="0%" stop-color="#7184C4"/>
+            <stop offset="55%" stop-color="#293C75"/>
+            <stop offset="100%" stop-color="#101C43"/>
+          </radialGradient>
+          <radialGradient id="eyeMetal" cx="30%" cy="25%">
+            <stop offset="0%" stop-color="#5576C4"/>
+            <stop offset="100%" stop-color="#07152F"/>
+          </radialGradient>
+        </defs>
+        <circle cx="38" cy="49" r="21" fill="url(#bodyMetal)"/>
+        <ellipse cx="29" cy="38" rx="8" ry="4" fill="#9CC9E4" opacity=".15" transform="rotate(-35 29 38)"/>
+        <path d="M22 29 A16 16 0 0 1 54 29 Z" fill="url(#headMetal)"/>
+        <ellipse cx="32" cy="22" rx="7" ry="3" fill="#D0DCFF" opacity=".12" transform="rotate(-30 32 22)"/>
+        <circle cx="31" cy="24" r="3.1" fill="url(#eyeMetal)"/>
+        <circle cx="44" cy="24" r="3.1" fill="url(#eyeMetal)"/>
+      </svg>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" >Home</a>
+      <a href="projects.html" >Projects</a>
+      <a href="connect.html" aria-current="page" class="active">Connect</a>
+    </nav>
+    <div class="contents-wrapper">
+      <button class="contents-btn" id="contentsBtn" aria-expanded="false" aria-controls="contentsMenu">
+        <span class="gear-icon">⚙</span> CONTENTS
+      </button>
+      <nav class="contents-menu" id="contentsMenu" hidden aria-label="Page contents">
+        <a href="#experience">Work Experience</a>
+        <a href="#conferences">Conferences & Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="scroll-stars" id="scrollStars" aria-hidden="true">
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+    <span class="scroll-star">✦</span><span class="scroll-star">✧</span>
+  </aside>
+  <main>
+
+    <section class="section dark-section page-intro" id="connect">
+      <div class="section-container">
+        <p class="section-kicker">RESEARCH, ENGINEERING &amp; COMMUNITY</p>
+        <h1 class="section-title">Connect</h1>
+        <p class="hero-description">Professional experience, academic activities and ways to get in touch.</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section light-section" id="experience">
+      <div class="section-container">
+        <p class="section-kicker">RESEARCH &amp; ENGINEERING</p>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-star">✦</span>
+            <div class="timeline-card">
+              <p class="date-label">JULY 2026 – SEPTEMBER 2026</p>
+              <h3>Research Intern</h3>
+              <h4>Max Planck Institute for Intelligent Systems</h4>
+              <p class="location">Stuttgart, Germany</p>
+              <p class="project-label">Project: Continuous and Precise Torque (CAPT) Motor</p>
+              <p>Supervisor: Prof. Dr. Katherine J. Kuchenbecker<br>Mentors: Dr. Bernard Javot and Dr. Giulia Ballardini</p>
+              <ul class="detail-list">
+                <li>Developed a Python real-time GUI to monitor motor vitals — angle, torque and phase currents — and evaluate transparency-fidelity measures.</li>
+                <li>Implemented impedance and energy-based control algorithms to optimise renderable Z-width and performed full system identification.</li>
+                <li>Benchmarked motor performance against direct-drive hardware in a custom driving simulator focused on lane-following and PIO mitigation.</li>
+              </ul>
+              <figure class="media-card">
+                <img src="capt-motor.jpg" alt="CAPT Motor project at the Max Planck Institute" loading="lazy" style="width: min(100%, 600px); height: auto; display: block; margin: 20px auto;">
+                <figcaption>CAPT Motor — Max Planck Institute for Intelligent Systems</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFERENCES -->
+    <section class="section dark-section" id="conferences">
+      <div class="section-container">
+        <p class="section-kicker">LEARNING &amp; COMMUNITY</p>
+        <h2 class="section-title">Conferences &amp; Activities</h2>
+        <div class="cards-grid">
+          <article class="info-card">
+            <p class="date-label">2025 · HANNOVER, GERMANY</p>
+            <h3>International Summer School in Microelectronics (ISSOM)</h3>
+            <p>At Leibniz University. Covered chip design, FPGA acceleration and AI/automotive integration.</p>
+          </article>
+          <article class="info-card">
+            <p class="date-label">2024 · ATHENS, GREECE</p>
+            <h3>CERN Particle Physics Masterclass</h3>
+            <p>Introductory particle physics masterclass organised by the International Particle Physics Outreach society and CERN.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section light-section contact-section" id="contact">
+      <div class="section-container">
+        <p class="section-kicker">LET'S CONNECT</p>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-copy">Interested in controls, robotics, formal methods or anything in between? Feel free to connect for collaboration.</p>
+        <a class="btn primary-btn" href="mailto:sofia.razoy@gmail.com">EMAIL ME</a>
+        <div class="contact-links">
+          <a href="mailto:sofia.razoy@gmail.com">sofia {dot} razoy {at} gmail {dot} com</a>
+          <a href="https://www.linkedin.com/in/sofia-razou-997180332/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/SofieRazou" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Sofia Razou</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
